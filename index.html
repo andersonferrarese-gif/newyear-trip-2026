@@ -4,80 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Christmas &amp; New Year 2026/27 — Amsterdam · Oman · Thailand</title>
-<meta name="description" content="Anderson & Dayse — Christmas and New Year 2026/27: Amsterdam > Muscat (Oman) > Phuket > Bangkok. Day-by-day plan, flights, hotels and budget. All costs are estimates for 2 people in euros.">
+<meta name="description" content="Anderson & Dayse — Christmas and New Year 2026/27: Amsterdam > Muscat (Oman) > Phuket > Bangkok. Day-by-day plan with progress checklists, flights, hotels and budget. All costs are estimates for 2 people in euros.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
 <style>
 :root{
   --ink:#0f172a; --muted:#5b6472; --paper:#f6f4ef; --card:#ffffff; --line:#e6e1d6;
   --teal:#0f766e; --gold:#b45309; --goldbg:#fff7e6; --blue:#1d4ed8; --bluebg:#eff6ff;
-  --opt:#7c3aed; --optbg:#f7f3ff; --red:#b91c1c;
+  --opt:#7c3aed; --optbg:#f7f3ff;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
 a{color:var(--teal)}
+.progress-top{position:fixed;top:0;left:0;right:0;height:5px;background:#e6e1d6;z-index:60}
+.progress-top i{display:block;height:100%;width:0;background:linear-gradient(90deg,#0f766e,#2dd4bf);transition:width .35s ease}
 nav{position:sticky;top:0;z-index:50;background:#0f172ae6;backdrop-filter:blur(6px);border-bottom:1px solid #ffffff22}
 nav .inner{max-width:1020px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:0 12px}
 nav a{color:#e2e8f0;text-decoration:none;font-size:.85rem;padding:12px 14px;white-space:nowrap;border-bottom:2px solid transparent}
 nav a:hover{color:#fff;border-bottom-color:var(--gold)}
-.hero{background:linear-gradient(160deg,#0f172a 0%,#134e4a 55%,#1e3a8a 100%);color:#f8fafc;padding:52px 18px 40px;text-align:center}
+.hero{background:linear-gradient(160deg,#0f172a 0%,#134e4a 55%,#1e3a8a 100%);color:#f8fafc;padding:46px 18px 34px;text-align:center}
 .hero .kicker{letter-spacing:.26em;text-transform:uppercase;font-size:.7rem;color:#fbbf24}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.7rem,4.5vw,2.7rem);margin:.5rem 0 .3rem}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.6rem,4.5vw,2.5rem);margin:.5rem 0 .3rem}
 .hero .sub{color:#cbd5e1;margin:0}
-.hero .route{max-width:900px;margin:16px auto 0;font-size:.95rem;color:#fef3c7;line-height:1.9}
-.hero .chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.hero .route{max-width:900px;margin:14px auto 0;font-size:.95rem;color:#fef3c7;line-height:1.9}
+.hero .chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 .hero .chip{background:#ffffff1a;border:1px solid #ffffff33;border-radius:99px;padding:6px 14px;font-size:.82rem}
+.hero-bar{max-width:520px;margin:18px auto 4px}
+.hero-bar .track{height:12px;background:#ffffff26;border-radius:99px;overflow:hidden}
+.hero-bar .track i{display:block;height:100%;width:0;background:linear-gradient(90deg,#fbbf24,#fde68a);border-radius:99px;transition:width .35s ease}
+.hero-bar .label{margin-top:6px;font-size:.83rem;color:#e2e8f0}
+.btn{border:1px solid #ffffff40;background:transparent;color:#f1f5f9;padding:7px 16px;border-radius:99px;cursor:pointer;font-size:.82rem;margin-top:12px}
+.btn:hover{background:#ffffff1a}
 .wrap{max-width:1020px;margin:0 auto;padding:26px 16px 60px}
 section.block{scroll-margin-top:56px}
-.block>h2{font-family:Georgia,serif;font-size:1.5rem;margin:34px 0 4px;display:flex;align-items:center;gap:10px}
-.block>h2 .flag{font-size:1.3rem}
-.block .lead{color:var(--muted);margin:0 0 16px;font-size:.92rem}
+.block>h2{font-family:Georgia,serif;font-size:1.45rem;margin:34px 0 4px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.block .lead{color:var(--muted);margin:0 0 14px;font-size:.9rem}
+.secprog{display:flex;align-items:center;gap:10px;max-width:520px;margin:6px 0 2px}
+.secbar{flex:1;height:8px;background:#e6e1d6;border-radius:99px;overflow:hidden}
+.secbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),#2dd4bf);transition:width .35s ease}
+.secpct{font-size:.8rem;font-weight:700;color:var(--teal);white-space:nowrap}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .budget{background:linear-gradient(140deg,#fffdf5,#fff);border:1px solid #f0e2c0;border-radius:14px;padding:16px 18px;text-align:center}
 .budget .amt{font-size:1.7rem;font-weight:800;color:var(--gold)}
-.budget .lbl{font-size:.85rem;color:var(--muted)}
+.budget .lbl{font-size:.82rem;color:var(--muted)}
 table{width:100%;border-collapse:collapse;font-size:.88rem}
 th{background:#f1ece0;text-align:left;padding:9px 10px;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#7c6a45}
 td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:hover td{background:#fbf8f1}
 .status{display:inline-block;border-radius:99px;padding:3px 10px;font-size:.72rem;font-weight:700}
 .status.ok{background:#dcfce7;color:#166534;border:1px solid #86efac}
-.status.todo{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
-.thumb{width:100%;height:160px;object-fit:cover;border-radius:10px;display:block;border:1px solid var(--line)}
 .hotel h3{margin:0 0 6px;font-size:1.05rem}
 .hotel .meta{font-size:.84rem;color:var(--muted)}
 .hotel .meta b{color:var(--ink)}
 .hotel .note{margin-top:10px;font-size:.85rem;background:#f8f6f0;border-left:3px solid var(--gold);padding:8px 12px;border-radius:6px}
 .daycard{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:0 0 22px;overflow:hidden;box-shadow:0 1px 4px rgba(15,23,42,.06)}
 .dayhead{padding:14px 20px;border-bottom:1px dashed var(--line);background:linear-gradient(120deg,#fbf8f1,#fff)}
-.dayhead h3{margin:0;font-size:1.12rem}
-.dayhead .daynote{font-size:.83rem;color:var(--muted)}
+.dayhead h3{margin:0;font-size:1.1rem}
+.dayhead .daynote{font-size:.82rem;color:var(--muted)}
+.dayprog{display:flex;align-items:center;gap:10px;margin-top:8px;max-width:420px}
+.pbar{flex:1;height:7px;background:#e6e1d6;border-radius:99px;overflow:hidden}
+.pbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#fcd34d);transition:width .35s ease}
+.dayprog .pct{font-size:.78rem;font-weight:700;color:var(--gold);white-space:nowrap}
+.dayprog .frac{font-size:.78rem;color:var(--muted);white-space:nowrap}
 .items{padding:10px 16px 14px}
-.it{border-left:4px solid #d8d2c4;background:#fcfbf8;border-radius:0 10px 10px 0;padding:12px 14px;margin:10px 0}
+.it{position:relative;border-left:4px solid #d8d2c4;background:#fcfbf8;border-radius:0 10px 10px 0;padding:12px 48px 12px 14px;margin:10px 0;transition:opacity .2s}
 .it.highlight{border-left-color:var(--gold);background:var(--goldbg)}
 .it.option{border-left-style:dashed;border-left-color:var(--opt);background:var(--optbg)}
 .it.travel{border-left-color:var(--blue);background:var(--bluebg)}
+.it.done{opacity:.55}
+.it.done h4{text-decoration:line-through}
+.tick{position:absolute;top:12px;right:12px;cursor:pointer}
+.tick input{width:20px;height:20px;accent-color:var(--teal);cursor:pointer;margin:0}
 .it-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-.it time{font-weight:800;color:var(--teal);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.92rem}
-.it h4{margin:0;font-size:1rem;display:inline}
-.tag{display:inline-block;border-radius:99px;padding:2px 9px;font-size:.68rem;font-weight:700;margin-left:6px;vertical-align:middle}
+.it time{font-weight:800;color:var(--teal);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.9rem}
+.it h4{margin:0;font-size:.98rem}
+.tag{display:inline-block;border-radius:99px;padding:2px 9px;font-size:.66rem;font-weight:700;margin-left:6px;vertical-align:middle}
 .tag.hl{background:#fde68a;color:#92400e}
 .tag.opt{background:#ede9fe;color:#6d28d9}
 .tag.trv{background:#dbeafe;color:#1e40af}
-.it p{margin:6px 0;font-size:.9rem}
-.facts{list-style:none;margin:8px 0 0;padding:0;font-size:.83rem;color:#3f4754}
+.it p{margin:5px 0 0;font-size:.88rem;color:#3f4754}
+.facts{list-style:none;margin:7px 0 0;padding:0;font-size:.82rem;color:#3f4754}
 .facts li{margin:2px 0}
 .facts .custo{color:var(--gold);font-weight:700}
 .facts .book{color:#1e40af}
-.photostrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;padding:0 16px 16px}
+.photostrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;padding:0 16px 16px}
 .photostrip figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
 .photostrip img{width:100%;height:150px;object-fit:cover;display:block}
-.photostrip figcaption{padding:6px 10px;font-size:.72rem;color:var(--muted);background:#fbf8f1}
-.intro{background:#eef7f5;border:1px solid #cfe5e0;border-radius:14px;padding:14px 18px;font-size:.88rem;margin-bottom:18px}
+.photostrip figcaption{padding:6px 10px;font-size:.7rem;color:var(--muted);background:#fbf8f1}
+.intro{background:#eef7f5;border:1px solid #cfe5e0;border-radius:14px;padding:14px 18px;font-size:.87rem;margin-bottom:18px}
 .intro b{color:var(--teal)}
-.practical li{margin:8px 0}
+.practical li{margin:8px 0;font-size:.92rem}
 footer{text-align:center;color:var(--muted);font-size:.78rem;padding:14px 16px 44px;border-top:1px solid var(--line)}
 @media (max-width:680px){
   .wrap{padding:18px 10px 50px}
@@ -96,6 +114,7 @@ function imgFail(img){
 </script>
 </head>
 <body>
+<div class="progress-top"><i id="topBar"></i></div>
 
 <nav>
   <div class="inner">
@@ -118,8 +137,14 @@ function imgFail(img){
     <span class="chip">📅 15 days</span>
     <span class="chip">✈️ 6 flights</span>
     <span class="chip">🏨 4 hotels</span>
-    <span class="chip">💰 All costs are estimates for 2 people in EUR</span>
+    <span class="chip">💰 Costs are estimates for 2 people in EUR</span>
   </div>
+  <div class="hero-bar">
+    <div class="track"><i id="heroBar"></i></div>
+    <div class="label">Trip progress: <b id="heroPct">0%</b> — <span id="heroFrac">0 of 0</span> checked</div>
+  </div>
+  <button class="btn" id="btnReset">♻️ Reset progress</button>
+  <p class="note" style="margin-top:10px;font-size:.75rem;color:#94a3b8">Tick each activity as you complete it — progress is saved automatically in this browser.</p>
 </header>
 
 <main class="wrap">
@@ -129,24 +154,23 @@ function imgFail(img){
     <h2>🌍 Trip overview</h2>
     <p class="lead">Christmas and New Year 2026/27 — a stopover in Muscat on the way out and back, a week on Phuket's Surin Beach, and New Year's Eve in Bangkok.</p>
     <div class="card">
-      <h3 style="margin:0 0 10px">Route</h3>
       <table>
         <tbody>
-          <tr><td><b>Tue 22 Dec</b></td><td>Amsterdam (AMS) → Muscat (MCT)</td><td>Oman Air WY172, 20:00 > 05:50 (+1)</td></tr>
-          <tr><td><b>Wed 23 Dec</b></td><td>Muscat day stop (Mutrah, Old Muscat, dhow cruise)</td><td>Fly on at 22:25 (WY833)</td></tr>
-          <tr><td><b>Thu 24 Dec</b></td><td>Muscat → Phuket (HKT), lands 07:35</td><td>Oman Air WY833</td></tr>
-          <tr><td><b>24–31 Dec</b></td><td>Phuket — Surin Beach base, island tours</td><td>Benyada Lodge</td></tr>
-          <tr><td><b>Thu 31 Dec</b></td><td>Phuket → Bangkok, 16:05 > 17:35</td><td>Thai Airways TG212 — New Year's Eve</td></tr>
+          <tr><td><b>Tue 22 Dec</b></td><td>Amsterdam (AMS) → Muscat (MCT), 20:00 > 05:50 (+1)</td><td>Night on the plane — <b>no hotel on 22/12</b></td></tr>
+          <tr><td><b>Wed 23 Dec</b></td><td>Muscat day: Mutrah, Souq, Old Muscat → airport hotel at 17:00</td><td>Fly 22:25 (WY833) to Phuket</td></tr>
+          <tr><td><b>Thu 24 Dec</b></td><td>Land in Phuket 07:35 — Surin Beach, Christmas Eve</td><td>Benyada Lodge</td></tr>
+          <tr><td><b>25–31 Dec</b></td><td>Phuket — island tours, beaches, temples</td><td>Benyada Lodge</td></tr>
+          <tr><td><b>Thu 31 Dec</b></td><td>Phuket → Bangkok, 16:05 > 17:35 — New Year's Eve</td><td>Thai Airways TG212</td></tr>
           <tr><td><b>31 Dec – 4 Jan</b></td><td>Bangkok — Sukhumvit 49, temples &amp; markets</td><td>4 nights</td></tr>
-          <tr><td><b>Mon 4 Jan</b></td><td>Bangkok → Phuket (06:40) · beach day at Nai Yang · Phuket → Muscat (19:10 > 22:40)</td><td>TG227 + WY832</td></tr>
+          <tr><td><b>Mon 4 Jan</b></td><td>Bangkok → Phuket (06:40) · Nai Yang beach · Phuket → Muscat (19:10 > 22:40)</td><td>TG227 + WY832</td></tr>
           <tr><td><b>Tue 5 Jan</b></td><td>Muscat: Grand Mosque, then home — WY171 14:00 > 18:35</td><td>Royal Tulip Muscat</td></tr>
         </tbody>
       </table>
     </div>
     <div class="grid3">
-      <div class="budget"><div class="amt">€455</div><div class="lbl">🇴🇲 Oman — activities, food &amp; local transport<br>(excluding flights and hotels)</div></div>
-      <div class="budget"><div class="amt">€1,215</div><div class="lbl">🇹🇭 Phuket — activities, food &amp; local transport<br>(excluding flights and hotels)</div></div>
-      <div class="budget"><div class="amt">€779</div><div class="lbl">🇹🇭 Bangkok — activities, food &amp; local transport<br>(excluding flights and hotels)</div></div>
+      <div class="budget"><div class="amt">≈ €290</div><div class="lbl">🇴🇲 Oman — activities, food &amp; transport<br>(adjusted: dhow cruise &amp; Bait Al Luban removed)</div></div>
+      <div class="budget"><div class="amt">€1,215</div><div class="lbl">🇹🇭 Phuket — activities, food &amp; transport<br>(excluding flights and hotels)</div></div>
+      <div class="budget"><div class="amt">€779</div><div class="lbl">🇹🇭 Bangkok — activities, food &amp; transport<br>(excluding flights and hotels)</div></div>
     </div>
   </section>
 
@@ -169,22 +193,21 @@ function imgFail(img){
       <p style="font-size:.83rem;color:var(--muted);margin:12px 0 0">⚠️ On <b>4 January</b> the Thai Airways and Oman Air flights are <b>separate bookings</b>: collect bags in Phuket and check in again.</p>
     </div>
     <div class="photostrip">
-      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boeing_787-9_%E2%80%98A4O-SC%E2%80%99_Oman_Air_%28cropped%29.jpg?width=640" alt="Oman Air Boeing 787-9" loading="lazy" onerror="imgFail(this)"><figcaption>Oman Air Boeing 787-9 — Foto: Wikimedia Commons</figcaption></figure>
-      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HS-TKZ%40PEK_%2820191029154241%29.jpg?width=640" alt="Thai Airways aircraft" loading="lazy" onerror="imgFail(this)"><figcaption>Thai Airways — Foto: Wikimedia Commons</figcaption></figure>
-      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Suvarnabhumi_Airport_Terminal_E_interior_at_dusk.jpg?width=640" alt="Suvarnabhumi Airport Bangkok" loading="lazy" onerror="imgFail(this)"><figcaption>Suvarnabhumi Airport (Bangkok) — Foto: Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boeing_787-9_%E2%80%98A4O-SC%E2%80%99_Oman_Air_%28cropped%29.jpg?width=640" alt="Oman Air Boeing 787-9" loading="lazy" onerror="imgFail(this)"><figcaption>Oman Air Boeing 787-9 — Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/HS-TKZ%40PEK_%2820191029154241%29.jpg?width=640" alt="Thai Airways aircraft" loading="lazy" onerror="imgFail(this)"><figcaption>Thai Airways — Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Suvarnabhumi_Airport_Terminal_E_interior_at_dusk.jpg?width=640" alt="Suvarnabhumi Airport Bangkok" loading="lazy" onerror="imgFail(this)"><figcaption>Suvarnabhumi Airport (Bangkok) — Wikimedia Commons</figcaption></figure>
     </div>
   </section>
 
   <!-- ============ HOTELS ============ -->
   <section class="block" id="hotels">
     <h2>🏨 Hotels</h2>
-    <p class="lead">Three booked, one day room still to book.</p>
+    <p class="lead"><b>No hotel on 22/12</b> — the night of 22→23 Dec is spent on the WY172 flight. All hotels below are booked.</p>
     <div class="grid2">
       <div class="card hotel">
-        <h3>Day room in Muscat <span class="status todo">To book</span></h3>
-        <p class="meta"><b>Suggested:</b> Wyndham Garden Muscat Al Khuwair<br>📅 22–23 Dec · 📍 Al Khuwair, Muscat<br>🔑 Book the night of 22 Dec so the room is ready at 07:00</p>
-        <p class="meta">💶 Approx. €62 on lastminute.com (Oct 2026)</p>
-        <p class="note">Also covers Oman's hotel-booking entry condition. Book via <a href="https://www.booking.com" target="_blank" rel="noopener">Booking.com</a> or <a href="https://www.lastminute.com" target="_blank" rel="noopener">lastminute.com</a>.</p>
+        <h3>Muscat Airport Hotel — inside MCT <span class="status ok">Booked</span></h3>
+        <p class="meta">📅 Wed 23 Dec · check-in ~<b>17:00–18:00</b> · out before the 22:25 flight<br>📍 Inside Muscat International Airport</p>
+        <p class="note">Booked from 23/12: you enter the hotel around 17:00 to rest and shower before the 22:25 flight to Phuket. The hotel is inside the airport — walking distance to the gate.</p>
       </div>
       <div class="card hotel">
         <h3>Benyada Lodge — Surin Beach (3*) <span class="status ok">Booked</span></h3>
@@ -198,7 +221,7 @@ function imgFail(img){
       </div>
       <div class="card hotel">
         <h3>Royal Tulip Muscat (4*), Deluxe King <span class="status ok">Booked</span></h3>
-        <p class="meta">📅 4–5 Jan · 📍 Al Marafah Street, Bldg 689/1, Way 238, Al Ghubra North, Muscat<br>🔑 In Mon 4 Jan 14:00–00:00 · out Tue 5 Jan by 12:00<br>✅ Booking.com</p>
+        <p class="meta">📅 4–5 Jan · 📍 Al Marafah Street, Bldg 689/1, Way 238, Al Ghubra North, Muscat<br>🔑 In Mon 4 Jan 14:00–00:00 · out Tue 5 Jan by 12:00 · ✅ Booking.com</p>
         <p class="note">Rate includes early check-in / late check-out subject to availability, 20% off food. 5 min from the Grand Mosque.</p>
       </div>
     </div>
@@ -206,10 +229,11 @@ function imgFail(img){
 
   <!-- ============ OMAN ============ -->
   <section class="block" id="oman">
-    <h2><span class="flag">🇴🇲</span> Oman — Muscat</h2>
-    <p class="lead">Stopover on 23 Dec 2026 and overnight on 4–5 Jan 2027. <b>Estimated total for Oman (activities, food, local transport, excl. hotels and options): EUR 455.</b></p>
+    <h2><span>🇴🇲</span> Oman — Muscat</h2>
+    <div class="secprog"><div class="secbar"><i></i></div><span class="secpct">0%</span></div>
+    <p class="lead">Stopover on 23 Dec 2026 and overnight on 4–5 Jan 2027. <b>Estimated total for Oman ≈ EUR 290</b> (activities, food, local transport, excl. hotels — adjusted after removing the sunset dhow cruise and Bait Al Luban dinner from the original EUR 455 plan).</p>
     <div class="intro">
-      <p style="margin:0 0 6px"><b>Entry:</b> visa-free for up to 14 days (Italian and Brazilian passports). Carry a passport valid 6+ months, the onward ticket, a hotel booking and travel insurance that covers Oman.</p>
+      <p style="margin:0 0 6px"><b>Entry:</b> visa-free up to 14 days (Italian and Brazilian passports). Carry a passport valid 6+ months, the onward ticket, a hotel booking and travel insurance that covers Oman.</p>
       <p style="margin:0 0 6px"><b>Dress:</b> Grand Mosque — women in loose clothes covering arms and legs plus a headscarf; men in long trousers. Elsewhere: modest clothing, no beachwear in town.</p>
       <p style="margin:0"><b>Getting around:</b> Otaxi app or the official airport taxi desk. Cards accepted almost everywhere. <b>Weather:</b> about 25°C, sunny.</p>
     </div>
@@ -217,38 +241,49 @@ function imgFail(img){
     <div class="daycard" id="oman-23">
       <div class="dayhead">
         <h3>Wed 23 Dec — Muscat stopover</h3>
-        <div class="daynote">Land 05:50 (WY172), fly on 22:25 (WY833). Day room not booked yet: book the night of 22 Dec so it's ready on arrival.</div>
+        <div class="daynote">Land 05:50 (WY172) · airport hotel check-in <b>17:00</b> · fly 22:25 (WY833). No hotel on 22/12.</div>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
       </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>05:50</time><h4>Land in Muscat, immigration <span class="tag trv">✈️ Travel</span></h4></div>
-          <p>Visa-free entry. Get an eSIM or local SIM if you want data.</p>
+          <p>Visa-free entry. Get an eSIM if you want data.</p>
           <ul class="facts">
             <li>📍 Muscat airport (MCT)</li>
-            <li class="book">🎟 eSIM: <a href="https://www.airalo.com" target="_blank" rel="noopener">Airalo</a> or similar, before you fly</li>
+            <li class="book">🎟 eSIM: <a href="https://www.airalo.com" target="_blank" rel="noopener">Airalo</a> — buy before you fly</li>
           </ul>
         </article>
         <article class="it travel">
-          <div class="it-top"><time>07:00</time><h4>Taxi to day hotel, shower, breakfast <span class="tag trv">🚗 Transfer</span></h4></div>
-          <p>Drop bags, freshen up.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>07:00</time><h4>Bag drop at the airport hotel <span class="tag trv">🚗 Transfer</span></h4></div>
+          <p>The hotel is inside the airport — leave bags with reception (check-in is ~17:00).</p>
+          <ul class="facts"><li>📍 Inside MCT · 🎟 Ask reception</li></ul>
+        </article>
+        <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>08:15</time><h4>Taxi to Mutrah <span class="tag trv">🚗 Transfer</span></h4></div>
+          <p>About 25 min from the airport.</p>
           <ul class="facts">
-            <li>📍 MCT > Al Khuwair, 15 min</li>
-            <li class="custo">💶 Estimated for 2: EUR 45</li>
-            <li class="book">🎟 Hotel: <a href="https://www.booking.com" target="_blank" rel="noopener">Booking.com</a> / <a href="https://www.lastminute.com" target="_blank" rel="noopener">lastminute.com</a>. Taxi: airport desk or Otaxi · 📅 Book ahead: Yes</li>
+            <li>📍 MCT > Mutrah</li>
+            <li class="custo">💶 Estimated for 2: EUR 30 (est.)</li>
+            <li>🎟 Otaxi or airport taxi desk</li>
           </ul>
         </article>
         <article class="it highlight">
-          <div class="it-top"><time>08:30</time><h4>Mutrah Corniche and fish market <span class="tag hl">✨ Highlight</span></h4></div>
-          <p>Seafront walk, dhows in the harbour, the fish market is busiest early.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>08:45</time><h4>Mutrah Corniche and fish market <span class="tag hl">✨ Highlight</span></h4></div>
+          <p>Seafront walk, dhows in the harbour; the fish market is busiest early.</p>
           <ul class="facts">
-            <li>📍 Mutrah, 25 min taxi</li>
+            <li>📍 Mutrah</li>
             <li class="custo">💶 Estimated for 2: EUR 20</li>
             <li>🎟 No ticket</li>
           </ul>
         </article>
         <article class="it highlight">
-          <div class="it-top"><time>09:15</time><h4>Mutrah Souq (morning session) <span class="tag hl">✨ Highlight</span></h4></div>
-          <p>Open about 08:00–13:00. Frankincense, silver, Omani halwa, dates. Bargaining is normal.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>09:45</time><h4>Mutrah Souq (morning session) <span class="tag hl">✨ Highlight</span></h4></div>
+          <p>Open ~08:00–13:00. Frankincense, silver, Omani halwa, dates. Bargaining is normal.</p>
           <ul class="facts">
             <li>📍 Mutrah</li>
             <li class="custo">💶 Estimated for 2: EUR 45</li>
@@ -256,8 +291,9 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
-          <div class="it-top"><time>10:30</time><h4>Old Muscat: palace, forts, National Museum</h4></div>
-          <p>Al Alam Palace (outside only), Al Jalali and Mirani forts. National Museum of Oman next to the palace.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>11:15</time><h4>Old Muscat: palace, forts, National Museum</h4></div>
+          <p>Al Alam Palace (outside only), Al Jalali and Mirani forts; National Museum next to the palace.</p>
           <ul class="facts">
             <li>📍 Old Muscat, 10 min taxi</li>
             <li class="custo">💶 Estimated for 2: EUR 30</li>
@@ -265,56 +301,54 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
-          <div class="it-top"><time>12:30</time><h4>Lunch, then rest at the hotel</h4></div>
-          <p>Omani lunch (shuwa lamb, mashuai kingfish, karak tea), then nap and pool until mid-afternoon.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>13:00</time><h4>Omani lunch</h4></div>
+          <p>Shuwa lamb, mashuai kingfish, karak tea.</p>
           <ul class="facts">
-            <li>📍 Al Khuwair</li>
+            <li>📍 Mutrah / Old Muscat</li>
             <li class="custo">💶 Estimated for 2: EUR 55</li>
             <li>🎟 Walk-in</li>
           </ul>
         </article>
-        <article class="it highlight">
-          <div class="it-top"><time>16:00</time><h4>Sunset dhow cruise <span class="tag hl">✨ Highlight</span></h4></div>
-          <p>1.5–2 h on a traditional wooden boat along the coast. Sunset about 17:40.</p>
-          <ul class="facts">
-            <li>📍 Marina Bandar Al Rowdha, 25 min taxi</li>
-            <li class="custo">💶 Estimated for 2: EUR 95</li>
-            <li class="book">🎟 <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a> (search 'Muscat sunset dhow cruise') · 📅 Book ahead: Yes</li>
-          </ul>
-        </article>
         <article class="it">
-          <div class="it-top"><time>18:30</time><h4>Dinner at Bait Al Luban</h4></div>
-          <p>Omani restaurant in an old house on Mutrah Corniche, balcony over the harbour.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>14:30</time><h4>Relaxed afternoon on the Corniche</h4></div>
+          <p>Stroll the seafront, karak tea, watch the dhows in the harbour.</p>
           <ul class="facts">
-            <li>📍 Mutrah Corniche, 10 min taxi</li>
-            <li class="custo">💶 Estimated for 2: EUR 60</li>
-            <li>🎟 Reserve by phone or via Google Maps · 📅 Book ahead: Yes</li>
-          </ul>
-        </article>
-        <article class="it option">
-          <div class="it-top"><time>—</time><h4>Grand Mosque on 23 Dec <span class="tag opt">🔁 Optional alternative</span></h4></div>
-          <p>Only if you'd rather keep 5 Jan free. Visitors 08:00–11:00 Sat–Thu, free.</p>
-          <ul class="facts">
-            <li>📍 Al Ghubra</li>
-            <li class="custo">💶 Estimated for 2: EUR 10</li>
-            <li>🎟 Free, no booking</li>
+            <li>📍 Mutrah Corniche</li>
+            <li class="custo">💶 Estimated for 2: EUR 10 (est.)</li>
+            <li>🎟 No ticket</li>
           </ul>
         </article>
         <article class="it travel">
-          <div class="it-top"><time>19:45</time><h4>Taxi to the airport <span class="tag trv">🚗 Transfer</span></h4></div>
-          <p>35–40 min. Be there by 20:30 for the 22:25 flight.</p>
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>16:00</time><h4>Taxi back to the airport <span class="tag trv">🚗 Transfer</span></h4></div>
+          <p>About 25 min — arrive at the hotel by ~17:00.</p>
           <ul class="facts">
             <li>📍 Mutrah > MCT</li>
-            <li class="custo">💶 Estimated for 2: EUR 35</li>
-            <li>🎟 Otaxi or hotel</li>
+            <li class="custo">💶 Estimated for 2: EUR 30 (est.)</li>
+            <li>🎟 Otaxi</li>
           </ul>
+        </article>
+        <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>17:00</time><h4>Check-in at the airport hotel</h4></div>
+          <p>Shower and rest before the night flight.</p>
+          <ul class="facts"><li>📍 Inside MCT</li></ul>
+        </article>
+        <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
+          <div class="it-top"><time>20:30</time><h4>Walk to the gate — WY833 at 22:25 <span class="tag trv">✈️ Travel</span></h4></div>
+          <p>Hotel is inside the airport. Lands in Phuket 07:35.</p>
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mutrah_%283%29.jpg?width=640" alt="Mutrah, Oman" loading="lazy" onerror="imgFail(this)"><figcaption>Mutrah — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Al_Alam_Palace_I._Sultan%27s_Ceremonial_Residence.jpg?width=640" alt="Al Alam Palace, Muscat" loading="lazy" onerror="imgFail(this)"><figcaption>Al Alam Palace — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/National_museum_of_Oman.jpg?width=640" alt="National Museum of Oman" loading="lazy" onerror="imgFail(this)"><figcaption>National Museum of Oman — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dhow_znz.jpg?width=640" alt="Traditional dhow" loading="lazy" onerror="imgFail(this)"><figcaption>Traditional dhow — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mutrah_%283%29.jpg?width=640" alt="Mutrah, Oman" loading="lazy" onerror="imgFail(this)"><figcaption>Mutrah — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oman_-_Muscat_-_Mutrah.jpg?width=640" alt="Mutrah Corniche, Muscat" loading="lazy" onerror="imgFail(this)"><figcaption>Mutrah Corniche — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Frankincense.JPG?width=640" alt="Frankincense" loading="lazy" onerror="imgFail(this)"><figcaption>Frankincense — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Al_Alam_Palace_I._Sultan%27s_Ceremonial_Residence.jpg?width=640" alt="Al Alam Palace, Muscat" loading="lazy" onerror="imgFail(this)"><figcaption>Al Alam Palace — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/National_museum_of_Oman.jpg?width=640" alt="National Museum of Oman" loading="lazy" onerror="imgFail(this)"><figcaption>National Museum of Oman — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_the_coastline_of_Muttrah.jpg?width=640" alt="Mutrah coastline" loading="lazy" onerror="imgFail(this)"><figcaption>Mutrah coastline — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
@@ -322,11 +356,13 @@ function imgFail(img){
       <div class="dayhead">
         <h3>Mon 4 Jan — land back in Muscat</h3>
         <div class="daynote">Land 22:40 from Phuket (WY832) — Royal Tulip Muscat (Al Ghubra North).</div>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
       </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>22:40</time><h4>Land from Phuket (WY832), taxi to Royal Tulip <span class="tag trv">🚗 Transfer</span></h4></div>
-          <p>About 15 min to Al Ghubra North. Check-in open until 00:00: message the hotel that you arrive around midnight.</p>
+          <p>About 15 min to Al Ghubra North. Check-in open until 00:00 — message the hotel that you arrive around midnight.</p>
           <ul class="facts">
             <li>📍 MCT > Al Ghubra</li>
             <li class="custo">💶 Estimated for 2: EUR 15</li>
@@ -340,9 +376,11 @@ function imgFail(img){
       <div class="dayhead">
         <h3>Tue 5 Jan — Grand Mosque, then fly home</h3>
         <div class="daynote">WY171 at 14:00, lands Amsterdam 18:35.</div>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
       </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>07:30</time><h4>Breakfast</h4></div>
           <p>20% off food with your rate.</p>
           <ul class="facts">
@@ -352,6 +390,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>08:15</time><h4>Sultan Qaboos Grand Mosque <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Muscat's highlight: huge Persian carpet and chandelier. Visitors 08:00–11:00. 5 min from the hotel. Allow 1.5 h.</p>
           <ul class="facts">
@@ -361,11 +400,13 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>10:00</time><h4>Back to hotel, pack, check out</h4></div>
           <p>Check-out by 12:00 (late check-out subject to availability).</p>
           <ul class="facts"><li>📍 Royal Tulip</li></ul>
         </article>
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>11:15</time><h4>Taxi to the airport <span class="tag trv">🚗 Transfer</span></h4></div>
           <p>15 min. WY171 at 14:00, lands Amsterdam 18:35.</p>
           <ul class="facts">
@@ -376,15 +417,16 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Qaboos_Grand_Mosque_Muscat_06.JPG?width=640" alt="Sultan Qaboos Grand Mosque" loading="lazy" onerror="imgFail(this)"><figcaption>Sultan Qaboos Grand Mosque — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Qaboos_Grand_Mosque_Muscat_06.JPG?width=640" alt="Sultan Qaboos Grand Mosque" loading="lazy" onerror="imgFail(this)"><figcaption>Sultan Qaboos Grand Mosque — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
   </section>
 
   <!-- ============ PHUKET ============ -->
   <section class="block" id="phuket">
-    <h2><span class="flag">🇹🇭</span> Phuket</h2>
-    <p class="lead">24–31 Dec 2026 and the day of 4 Jan 2027. Base: Benyada Lodge, Surin Beach — all tours below pick up at the hotel unless noted. <b>Estimated total for Phuket (activities, food, local transport, excl. hotels and options): EUR 1215.</b></p>
+    <h2><span>🇹🇭</span> Phuket</h2>
+    <div class="secprog"><div class="secbar"><i></i></div><span class="secpct">0%</span></div>
+    <p class="lead">24–31 Dec 2026 and the day of 4 Jan 2027. Base: Benyada Lodge, Surin Beach — all tours below pick up at the hotel unless noted. <b>Estimated total for Phuket: EUR 1,215</b> (activities, food, local transport, excl. hotels and options).</p>
     <div class="intro">
       <p style="margin:0 0 6px"><b>Arrival:</b> Thu 24 Dec — WY833 lands 07:35. Grab to the hotel about 30 min. You arrive ~6 h before check-in: ask the hotel now for early check-in or bag drop.</p>
       <p style="margin:0 0 6px"><b>To Bangkok:</b> Thu 31 Dec — TG212, Phuket 16:05 > Bangkok 17:35. Leave the hotel by 13:30.</p>
@@ -397,9 +439,11 @@ function imgFail(img){
       <div class="dayhead">
         <h3>Thu 24 Dec — arrival + Christmas Eve</h3>
         <div class="daynote">WY833 lands 07:35 · hotel check-in from 14:00 · Benyada Lodge, Surin Beach.</div>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
       </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>07:35</time><h4>Land in Phuket, Grab to Surin <span class="tag trv">✈️ Travel</span></h4></div>
           <p>Immigration, then Grab or the airport taxi desk.</p>
           <ul class="facts">
@@ -409,6 +453,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>08:30</time><h4>Bag drop, breakfast, Surin Beach</h4></div>
           <p>Leave bags at reception, breakfast nearby, first swim. Check in from 14:00 (or earlier if they agree) and sleep.</p>
           <ul class="facts">
@@ -418,6 +463,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>19:00</time><h4>Christmas Eve dinner</h4></div>
           <p>Beachfront restaurant in Surin or Bang Tao.</p>
           <ul class="facts">
@@ -428,38 +474,50 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Surfing-surin-beach.jpg?width=640" alt="Surin Beach, Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Surin Beach — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Surfing-surin-beach.jpg?width=640" alt="Surin Beach, Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Surin Beach — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bar_in_Bang_Tao_Beach_of_Sheraton_Grande_Laguna_Phuket_-_panoramio.jpg?width=640" alt="Bang Tao Beach" loading="lazy" onerror="imgFail(this)"><figcaption>Bang Tao Beach — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-25">
-      <div class="dayhead"><h3>Fri 25 Dec — Christmas on Phi Phi</h3></div>
+      <div class="dayhead">
+        <h3>Fri 25 Dec — Christmas on Phi Phi</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>07:00–17:00</time><h4>Phi Phi Islands by speedboat <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Maya Bay, Pileh Lagoon, Viking Cave, snorkelling at Bamboo Island, lunch on Phi Phi Don. Pick an early-departure, small-group tour.</p>
           <ul class="facts">
             <li>📍 Hotel pick-up</li>
             <li class="custo">💶 Estimated for 2: EUR 150</li>
-            <li class="book">🎟 <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a>; check national park fee is included · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.getyourguide.com/s/?q=phi%20phi%20islands%20tour%20phuket" target="_blank" rel="noopener">GetYourGuide</a> · <a href="https://www.klook.com/search/?keyword=phi+phi+islands+phuket" target="_blank" rel="noopener">Klook</a> · <a href="https://www.viator.com/searchResults/all?text=phi%20phi%20islands%20phuket" target="_blank" rel="noopener">Viator</a> — check national park fee is included · 📅 Book ahead: Yes</li>
           </ul>
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KohPhiPhi.JPG?width=640" alt="Phi Phi Islands" loading="lazy" onerror="imgFail(this)"><figcaption>Phi Phi Islands — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?width=640" alt="Maya Bay, Thailand" loading="lazy" onerror="imgFail(this)"><figcaption>Maya Bay — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KohPhiPhi.JPG?width=640" alt="Phi Phi Islands" loading="lazy" onerror="imgFail(this)"><figcaption>Phi Phi Islands — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?width=640" alt="Maya Bay, Thailand" loading="lazy" onerror="imgFail(this)"><figcaption>Maya Bay — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Isla_Phi_Phi_Lay%2C_Tailandia%2C_2013-08-19%2C_DD_03.JPG?width=640" alt="Phi Phi Lay" loading="lazy" onerror="imgFail(this)"><figcaption>Phi Phi Lay — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ko_Mai_Phai_2.jpg?width=640" alt="Bamboo Island" loading="lazy" onerror="imgFail(this)"><figcaption>Bamboo Island — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-26">
-      <div class="dayhead"><h3>Sat 26 Dec — temples and sunset</h3></div>
+      <div class="dayhead">
+        <h3>Sat 26 Dec — temples and sunset</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Morning</time><h4>Surin Beach</h4></div>
           <p>Easy morning on the beach.</p>
           <ul class="facts"><li>📍 Surin</li></ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>14:00</time><h4>Big Buddha and Wat Chalong</h4></div>
           <p>Big Buddha on the hilltop, then Phuket's most important temple. Cover shoulders and knees.</p>
           <ul class="facts">
@@ -469,6 +527,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>17:45</time><h4>Sunset at Promthep Cape + Rawai seafood <span class="tag hl">✨ Highlight</span></h4></div>
           <p>The island's famous sunset point, then pick-your-fish dinner at Rawai seafood market.</p>
           <ul class="facts">
@@ -479,25 +538,31 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Big_Buddha_von_Phuket_02.jpg?width=640" alt="Big Buddha Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Big Buddha — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat_chalong_pagoda.jpg?width=640" alt="Wat Chalong" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Chalong — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phuket_Promthep_Cape.jpg?width=640" alt="Promthep Cape" loading="lazy" onerror="imgFail(this)"><figcaption>Promthep Cape — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Big_Buddha_von_Phuket_02.jpg?width=640" alt="Big Buddha Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Big Buddha — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat_chalong_pagoda.jpg?width=640" alt="Wat Chalong" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Chalong — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phuket_Promthep_Cape.jpg?width=640" alt="Promthep Cape" loading="lazy" onerror="imgFail(this)"><figcaption>Promthep Cape — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phuket_-_Rawai_Beach_11.jpg?width=640" alt="Rawai Beach" loading="lazy" onerror="imgFail(this)"><figcaption>Rawai Beach — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-27">
-      <div class="dayhead"><h3>Sun 27 Dec — beaches and Old Town</h3></div>
+      <div class="dayhead">
+        <h3>Sun 27 Dec — beaches and Old Town</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Morning</time><h4>Free morning, Bang Tao beach club</h4></div>
           <p>Catch Beach Club or a quiet walk along Bang Tao.</p>
           <ul class="facts">
             <li>📍 Bang Tao, 10 min</li>
             <li class="custo">💶 Estimated for 2: EUR 40</li>
-            <li>🎟 Daybeds: reserve on the club's website · 📅 Book ahead: Optional</li>
+            <li class="book">🛒 Daybeds: reserve on <a href="https://www.catchbeachclub.com" target="_blank" rel="noopener">Catch Beach Club</a> · 📅 Optional</li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>15:00</time><h4>Phuket Old Town</h4></div>
           <p>Sino-Portuguese shophouses on Thalang and Soi Romanee, cafés, street art.</p>
           <ul class="facts">
@@ -507,6 +572,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>17:00</time><h4>Sunday Walking Street (Lard Yai) <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Only on Sundays: night market on Thalang Road. Book your Grab home a bit early.</p>
           <ul class="facts">
@@ -517,52 +583,64 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Soi_Rommanee%2C_Phuket_Town.jpg?width=640" alt="Soi Rommanee, Phuket Old Town" loading="lazy" onerror="imgFail(this)"><figcaption>Phuket Old Town — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Soi_Rommanee%2C_Phuket_Town.jpg?width=640" alt="Soi Rommanee, Phuket Old Town" loading="lazy" onerror="imgFail(this)"><figcaption>Phuket Old Town — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sino-Portugese_Buildings_in_Phuket_Town_%28I%29.jpg?width=640" alt="Sino-Portuguese shophouses, Phuket Town" loading="lazy" onerror="imgFail(this)"><figcaption>Sino-Portuguese shophouses — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-28">
-      <div class="dayhead"><h3>Mon 28 Dec — Krabi by speedboat</h3></div>
+      <div class="dayhead">
+        <h3>Mon 28 Dec — Krabi by speedboat</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>07:30–17:30</time><h4>Krabi by speedboat: Railay Beach + Hong Islands <span class="tag hl">✨ Highlight</span></h4></div>
-          <p>Railay: limestone cliffs, Phra Nang cave beach, clear water, boat access only. Then Hong Islands lagoon and snorkelling. Lunch included.</p>
+          <p>Railay: limestone cliffs, Phra Nang cave beach, boat access only. Then Hong Islands lagoon and snorkelling. Lunch included.</p>
           <ul class="facts">
             <li>📍 Hotel pick-up, pier on the east coast</li>
             <li class="custo">💶 Estimated for 2: EUR 185</li>
-            <li class="book">🎟 <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a> (search 'Railay Hong Islands from Phuket') · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.getyourguide.com/s/?q=railay%20hong%20islands%20from%20phuket" target="_blank" rel="noopener">GetYourGuide</a> · <a href="https://www.klook.com/search/?keyword=railay+hong+islands+phuket" target="_blank" rel="noopener">Klook</a> · <a href="https://www.viator.com/searchResults/all?text=railay%20hong%20islands%20phuket" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
           </ul>
         </article>
         <article class="it option">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>—</time><h4>Phang Nga Bay and James Bond Island <span class="tag opt">🔁 Optional alternative</span></h4></div>
           <p>Instead of Krabi: sea-cave canoeing, karst islands, Koh Panyee floating village.</p>
           <ul class="facts">
             <li>📍 Hotel pick-up</li>
             <li class="custo">💶 Estimated for 2: EUR 180</li>
-            <li class="book">🎟 John Gray's Sea Canoe (<a href="https://www.johngray-seacanoe.com" target="_blank" rel="noopener">johngray-seacanoe.com</a>) or <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.johngray-seacanoe.com" target="_blank" rel="noopener">johngray-seacanoe.com</a> · <a href="https://www.getyourguide.com/s/?q=phang%20nga%20bay%20james%20bond%20island" target="_blank" rel="noopener">GetYourGuide</a> · <a href="https://www.viator.com/searchResults/all?text=phang%20nga%20bay%20james%20bond%20island" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
           </ul>
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Railay_Beach_5.jpg?width=640" alt="Railay Beach" loading="lazy" onerror="imgFail(this)"><figcaption>Railay Beach — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Koh_Lao_Lading_isalnd.jpg?width=640" alt="Hong Islands area, Krabi" loading="lazy" onerror="imgFail(this)"><figcaption>Hong Islands area — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg?width=640" alt="Phang Nga Bay" loading="lazy" onerror="imgFail(this)"><figcaption>Phang Nga Bay — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Railay_Beach_5.jpg?width=640" alt="Railay Beach" loading="lazy" onerror="imgFail(this)"><figcaption>Railay Beach — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Koh_Lao_Lading_isalnd.jpg?width=640" alt="Hong Islands area, Krabi" loading="lazy" onerror="imgFail(this)"><figcaption>Hong Islands area — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phra_Nang_beach_panorama.jpg?width=640" alt="Phra Nang Beach, Railay" loading="lazy" onerror="imgFail(this)"><figcaption>Phra Nang Beach — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg?width=640" alt="Phang Nga Bay" loading="lazy" onerror="imgFail(this)"><figcaption>Phang Nga Bay — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-29">
-      <div class="dayhead"><h3>Tue 29 Dec — cooking class and hidden beaches</h3></div>
+      <div class="dayhead">
+        <h3>Tue 29 Dec — cooking class and hidden beaches</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Morning</time><h4>Thai cooking class</h4></div>
           <p>Market visit plus 4–5 dishes; lunch is what you cook. Choose one with Surin pick-up.</p>
           <ul class="facts">
             <li>📍 Pick-up or Phuket Town</li>
             <li class="custo">💶 Estimated for 2: EUR 90</li>
-            <li class="book">🎟 <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a>, or book direct with the school · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.getyourguide.com/s/?q=thai%20cooking%20class%20phuket" target="_blank" rel="noopener">GetYourGuide</a> · <a href="https://www.klook.com/search/?keyword=thai+cooking+class+phuket" target="_blank" rel="noopener">Klook</a> · <a href="https://www.viator.com/searchResults/all?text=thai%20cooking%20class%20phuket" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Afternoon</time><h4>Laem Sing and Banana Beach</h4></div>
           <p>Two small, pretty beaches between Surin and Kamala.</p>
           <ul class="facts">
@@ -572,21 +650,30 @@ function imgFail(img){
           </ul>
         </article>
       </div>
+      <div class="photostrip">
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tom_yum.jpg?width=640" alt="Tom yum — Thai cooking" loading="lazy" onerror="imgFail(this)"><figcaption>Thai cooking — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_at_Laem_Sing_Beach.jpg?width=640" alt="Laem Sing Beach" loading="lazy" onerror="imgFail(this)"><figcaption>Laem Sing Beach — Wikimedia Commons</figcaption></figure>
+      </div>
     </div>
 
     <div class="daycard" id="phuket-30">
-      <div class="dayhead"><h3>Wed 30 Dec — elephants and farewell dinner</h3></div>
+      <div class="dayhead">
+        <h3>Wed 30 Dec — elephants and farewell dinner</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Morning</time><h4>Phuket Elephant Sanctuary <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Ethical: observe and walk with rescued elephants, no riding or bathing.</p>
           <ul class="facts">
             <li>📍 Pa Klok, hotel pick-up</li>
             <li class="custo">💶 Estimated for 2: EUR 160</li>
-            <li class="book">🎟 Book direct: <a href="https://www.phuketelephantsanctuary.org" target="_blank" rel="noopener">phuketelephantsanctuary.org</a> · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.phuketelephantsanctuary.org" target="_blank" rel="noopener">phuketelephantsanctuary.org</a> · 📅 Book ahead: Yes</li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Afternoon</time><h4>Beach and Thai massage</h4></div>
           <p>Surin Beach, massage at a local spa.</p>
           <ul class="facts">
@@ -596,6 +683,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>19:00</time><h4>Farewell Phuket dinner</h4></div>
           <p>Sunset restaurant on the Surin-Kamala coast.</p>
           <ul class="facts">
@@ -606,14 +694,19 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephas_maximus_%28Bandipur%29.jpg?width=640" alt="Asian elephant" loading="lazy" onerror="imgFail(this)"><figcaption>Asian elephant — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephas_maximus_%28Bandipur%29.jpg?width=640" alt="Asian elephant" loading="lazy" onerror="imgFail(this)"><figcaption>Asian elephant — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Thai_Massage-Fuesse.JPG?width=640" alt="Thai massage" loading="lazy" onerror="imgFail(this)"><figcaption>Thai massage — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="phuket-31">
-      <div class="dayhead"><h3>Thu 31 Dec — last swim, fly to Bangkok</h3></div>
+      <div class="dayhead">
+        <h3>Thu 31 Dec — last swim, fly to Bangkok</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Morning</time><h4>Last swim, check-out by 12:00</h4></div>
           <p>Lunch near the hotel.</p>
           <ul class="facts">
@@ -622,6 +715,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>13:30</time><h4>Grab to the airport <span class="tag trv">🚗 Transfer</span></h4></div>
           <p>30–40 min. Leave early: New Year's Eve traffic.</p>
           <ul class="facts">
@@ -631,6 +725,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>16:05</time><h4>Fly to Bangkok (TG212) <span class="tag trv">✈️ Travel</span></h4></div>
           <p>Lands 17:35. Continue in the Bangkok section.</p>
         </article>
@@ -638,9 +733,13 @@ function imgFail(img){
     </div>
 
     <div class="daycard" id="phuket-04">
-      <div class="dayhead"><h3>Mon 4 Jan — Nai Yang beach day</h3></div>
+      <div class="dayhead">
+        <h3>Mon 4 Jan — Nai Yang beach day</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>08:05</time><h4>Land from Bangkok (TG227), left luggage <span class="tag trv">✈️ Travel</span></h4></div>
           <p>Collect bags, store them at the airport left-luggage desk.</p>
           <ul class="facts">
@@ -650,6 +749,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>09:00</time><h4>Nai Yang Beach <span class="tag hl">✨ Highlight</span></h4></div>
           <p>10 min from the airport, in Sirinat National Park. Shady, calm water, seafood shacks. Planes land right overhead.</p>
           <ul class="facts">
@@ -659,6 +759,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>15:45</time><h4>Back to the airport <span class="tag trv">🚗 Transfer</span></h4></div>
           <p>Collect bags, check in for Oman Air WY832 at 19:10 (be there by 16:10).</p>
           <ul class="facts">
@@ -668,15 +769,16 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nai_Yang_Beach_%2829%29.jpg?width=640" alt="Nai Yang Beach, Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Nai Yang Beach — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nai_Yang_Beach_%2829%29.jpg?width=640" alt="Nai Yang Beach, Phuket" loading="lazy" onerror="imgFail(this)"><figcaption>Nai Yang Beach — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
   </section>
 
   <!-- ============ BANGKOK ============ -->
   <section class="block" id="bangkok">
-    <h2><span class="flag">🇹🇭</span> Bangkok — New Year's Eve</h2>
-    <p class="lead">31 Dec 2026 – 4 Jan 2027, 4 nights on Soi Sukhumvit 49 (Phrom Phong / Thong Lo). BTS Phrom Phong or Thong Lo about 10 min walk. <b>Estimated total for Bangkok (activities, food, local transport, excl. hotels and options): EUR 779.</b></p>
+    <h2><span>🇹🇭</span> Bangkok — New Year's Eve</h2>
+    <div class="secprog"><div class="secbar"><i></i></div><span class="secpct">0%</span></div>
+    <p class="lead">31 Dec 2026 – 4 Jan 2027, 4 nights on Soi Sukhumvit 49 (Phrom Phong / Thong Lo). BTS Phrom Phong or Thong Lo about 10 min walk. <b>Estimated total for Bangkok: EUR 779</b> (activities, food, local transport, excl. hotels and options).</p>
     <div class="intro">
       <p style="margin:0 0 6px"><b>Hotel:</b> 16 Soi Sukhumvit 49, Klong Ton Nuea, Watthana, Bangkok 10110 · ☎️ <a href="tel:+6626627575">+66 2 662 7575</a></p>
       <p style="margin:0 0 6px"><b>Arrival:</b> Thu 31 Dec — TG212 lands Suvarnabhumi 17:35 (domestic). Taxi or Grab 40–60 min on NYE evening.</p>
@@ -686,9 +788,13 @@ function imgFail(img){
     </div>
 
     <div class="daycard" id="bkk-31">
-      <div class="dayhead"><h3>Thu 31 Dec — New Year's Eve 🎆</h3></div>
+      <div class="dayhead">
+        <h3>Thu 31 Dec — New Year's Eve 🎆</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>17:35</time><h4>Land, taxi to the hotel <span class="tag trv">✈️ Travel</span></h4></div>
           <p>If traffic is bad: Airport Rail Link to Phaya Thai, then BTS to Phrom Phong.</p>
           <ul class="facts">
@@ -698,15 +804,17 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>20:30</time><h4>New Year's Eve: Octave Rooftop <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Rooftop bar at Marriott Sukhumvit 57, 5 min from the hotel, views of fireworks across the city. NYE is ticketed and sells out.</p>
           <ul class="facts">
             <li>📍 Sukhumvit 57</li>
             <li class="custo">💶 Estimated for 2: EUR 300</li>
-            <li class="book">🎟 Octave / Marriott Sukhumvit website (NYE tickets) · 📅 Book ahead: Yes, now</li>
+            <li class="book">🛒 <a href="https://www.marriott.com" target="_blank" rel="noopener">Marriott Sukhumvit website</a> (Octave NYE tickets) · 📅 Book ahead: Yes, now</li>
           </ul>
         </article>
         <article class="it option">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>—</time><h4>Free: CentralWorld countdown <span class="tag opt">🔁 Optional alternative</span></h4></div>
           <p>Biggest outdoor countdown party with concert and fireworks. BTS Phrom Phong > Chit Lom, 4 stops. Very crowded.</p>
           <ul class="facts">
@@ -716,14 +824,20 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/4Y1A1159_Bangkok_%2833536795515%29.jpg?width=640" alt="Bangkok skyline" loading="lazy" onerror="imgFail(this)"><figcaption>Bangkok skyline — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/4Y1A1159_Bangkok_%2833536795515%29.jpg?width=640" alt="Bangkok skyline" loading="lazy" onerror="imgFail(this)"><figcaption>Bangkok skyline — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangkok_-_City_skyline_at_sunset.JPG?width=640" alt="Bangkok skyline at sunset" loading="lazy" onerror="imgFail(this)"><figcaption>Skyline at sunset — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/CentralWorld-Dec2006.jpg?width=640" alt="CentralWorld Bangkok" loading="lazy" onerror="imgFail(this)"><figcaption>CentralWorld — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="bkk-01">
-      <div class="dayhead"><h3>Fri 1 Jan — slow start + Chinatown</h3></div>
+      <div class="dayhead">
+        <h3>Fri 1 Jan — slow start + Chinatown</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>Late morning</time><h4>Brunch in Thong Lo / EmQuartier</h4></div>
           <p>Slow start.</p>
           <ul class="facts">
@@ -733,20 +847,23 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>14:00</time><h4>Jim Thompson House</h4></div>
           <p>Teak house museum of the American silk king, guided tour about 35 min. Check New Year's Day opening.</p>
           <ul class="facts">
             <li>📍 BTS National Stadium</li>
             <li class="custo">💶 Estimated for 2: EUR 21</li>
-            <li class="book">🎟 At the door or <a href="https://www.jimthompsonhouse.org" target="_blank" rel="noopener">jimthompsonhouse.org</a></li>
+            <li class="book">🛒 At the door or <a href="https://www.jimthompsonhouse.org" target="_blank" rel="noopener">jimthompsonhouse.org</a></li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>15:30</time><h4>Siam area and Lumphini Park</h4></div>
           <p>Siam Paragon (air-con shopping) or Lumphini Park.</p>
           <ul class="facts"><li>📍 BTS Siam / Sala Daeng</li></ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>18:30</time><h4>Chinatown street food (Yaowarat) <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Crab omelette, grilled seafood, mango sticky rice. Some stalls may take a holiday break.</p>
           <ul class="facts">
@@ -757,24 +874,31 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Main_House_of_Jim_Thompson_photo_Don_Ramey_Logan.jpg?width=640" alt="Jim Thompson House" loading="lazy" onerror="imgFail(this)"><figcaption>Jim Thompson House — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%282022%29_%E0%B8%95%E0%B8%B6%E0%B8%81%E0%B9%81%E0%B8%96%E0%B8%A7%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%96%E0%B8%99%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%8A_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg?width=640" alt="Yaowarat Road, Bangkok Chinatown" loading="lazy" onerror="imgFail(this)"><figcaption>Yaowarat (Chinatown) — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Main_House_of_Jim_Thompson_photo_Don_Ramey_Logan.jpg?width=640" alt="Jim Thompson House" loading="lazy" onerror="imgFail(this)"><figcaption>Jim Thompson House — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%282022%29_%E0%B8%95%E0%B8%B6%E0%B8%81%E0%B9%81%E0%B8%96%E0%B8%A7%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%96%E0%B8%99%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%8A_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%284%29.jpg?width=640" alt="Yaowarat Road, Bangkok Chinatown" loading="lazy" onerror="imgFail(this)"><figcaption>Yaowarat (Chinatown) — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_with_glutinous_rice.jpg?width=640" alt="Mango sticky rice" loading="lazy" onerror="imgFail(this)"><figcaption>Mango sticky rice — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Ulica_Yaowarat%2C_Chi%C5%84skie_produkty_%C5%BCywno%C5%9Bciowe_%2801%29.jpg?width=640" alt="Yaowarat street food" loading="lazy" onerror="imgFail(this)"><figcaption>Chinatown street food — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="bkk-02">
-      <div class="dayhead"><h3>Sat 2 Jan — Grand Palace and temples</h3></div>
+      <div class="dayhead">
+        <h3>Sat 2 Jan — Grand Palace and temples</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>07:45</time><h4>Grand Palace and Wat Phra Kaew <span class="tag hl">✨ Highlight</span></h4></div>
           <p>BTS to Saphan Taksin, orange-flag boat to Tha Chang. Arrive for 08:30 opening, allow 2 h. Ignore anyone saying it's closed: scam.</p>
           <ul class="facts">
             <li>📍 Old town</li>
             <li class="custo">💶 Estimated for 2: EUR 52</li>
-            <li class="book">🎟 At the gate or <a href="https://www.royalgrandpalace.th" target="_blank" rel="noopener">royalgrandpalace.th</a></li>
+            <li class="book">🛒 At the gate or <a href="https://www.royalgrandpalace.th" target="_blank" rel="noopener">royalgrandpalace.th</a></li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>11:00</time><h4>Wat Pho (Reclining Buddha)</h4></div>
           <p>5 min walk from the palace. Good, cheap massage at the temple's school.</p>
           <ul class="facts">
@@ -784,6 +908,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>12:30</time><h4>Wat Arun by cross-river ferry</h4></div>
           <p>Ferry from Tha Tien pier, climb the central tower, lunch by the river.</p>
           <ul class="facts">
@@ -793,6 +918,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>15:00</time><h4>Back to the hotel, rest</h4></div>
           <p>Boat to Saphan Taksin, BTS home.</p>
           <ul class="facts">
@@ -801,15 +927,17 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>17:30</time><h4>Rooftop sunset: Sky Bar or Vertigo <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Smart-casual: no shorts or flip-flops for men.</p>
           <ul class="facts">
             <li>📍 Silom / Sathorn</li>
             <li class="custo">💶 Estimated for 2: EUR 60</li>
-            <li class="book">🎟 <a href="https://www.lebua.com" target="_blank" rel="noopener">lebua.com</a> (Sky Bar) or Banyan Tree (Vertigo) · 📅 Book ahead: Reserve</li>
+            <li class="book">🛒 <a href="https://www.lebua.com" target="_blank" rel="noopener">lebua.com</a> (Sky Bar) or <a href="https://www.banyantree.com" target="_blank" rel="noopener">Banyan Tree</a> (Vertigo) · 📅 Reserve</li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>20:00</time><h4>Dinner in Thong Lo</h4></div>
           <p>Lots of good Thai and international restaurants near the hotel.</p>
           <ul class="facts">
@@ -820,16 +948,22 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/0005574_-_Wat_Phra_Kaew_006.jpg?width=640" alt="Wat Phra Kaew, Grand Palace" loading="lazy" onerror="imgFail(this)"><figcaption>Grand Palace / Wat Phra Kaew — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B9%84%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99.jpg?width=640" alt="Wat Pho Reclining Buddha" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Pho (Reclining Buddha) — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg?width=640" alt="Wat Arun" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Arun — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/0005574_-_Wat_Phra_Kaew_006.jpg?width=640" alt="Wat Phra Kaew, Grand Palace" loading="lazy" onerror="imgFail(this)"><figcaption>Grand Palace / Wat Phra Kaew — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Palace_in_Bangkok_-_Chakri_Mahaprasad_Hall.jpg?width=640" alt="Chakri Maha Prasat Hall" loading="lazy" onerror="imgFail(this)"><figcaption>Chakri Maha Prasat Hall — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B9%84%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99.jpg?width=640" alt="Wat Pho Reclining Buddha" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Pho — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg?width=640" alt="Wat Arun" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Arun — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_31.jpg?width=640" alt="Wat Arun" loading="lazy" onerror="imgFail(this)"><figcaption>Wat Arun — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="bkk-03">
-      <div class="dayhead"><h3>Sun 3 Jan — Chatuchak and night market</h3></div>
+      <div class="dayhead">
+        <h3>Sun 3 Jan — Chatuchak and night market</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it highlight">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>09:00</time><h4>Chatuchak Weekend Market <span class="tag hl">✨ Highlight</span></h4></div>
           <p>Sat–Sun only, 15,000 stalls. Go early before the heat.</p>
           <ul class="facts">
@@ -839,15 +973,17 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it option">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>—</time><h4>Maeklong Railway Market + floating market <span class="tag opt">🔁 Optional alternative</span></h4></div>
           <p>Half-day tour instead of Chatuchak, leaves around 07:00.</p>
           <ul class="facts">
             <li>📍 Tour pick-up</li>
             <li class="custo">💶 Estimated for 2: EUR 90</li>
-            <li class="book">🎟 <a href="https://www.getyourguide.com" target="_blank" rel="noopener">GetYourGuide</a>, <a href="https://www.klook.com" target="_blank" rel="noopener">Klook</a> or <a href="https://www.viator.com" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
+            <li class="book">🛒 <a href="https://www.getyourguide.com/s/?q=maeklong%20railway%20floating%20market%20tour" target="_blank" rel="noopener">GetYourGuide</a> · <a href="https://www.klook.com/search/?keyword=maeklong+floating+market+bangkok" target="_blank" rel="noopener">Klook</a> · <a href="https://www.viator.com/searchResults/all?text=maeklong%20railway%20floating%20market" target="_blank" rel="noopener">Viator</a> · 📅 Book ahead: Yes</li>
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>14:00</time><h4>Thai massage and pack</h4></div>
           <p>2 h massage near the hotel, then pack.</p>
           <ul class="facts">
@@ -857,6 +993,7 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>18:30</time><h4>Jodd Fairs night market, early night</h4></div>
           <p>Back by 21:30: alarm around 04:00.</p>
           <ul class="facts">
@@ -867,16 +1004,22 @@ function imgFail(img){
         </article>
       </div>
       <div class="photostrip">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangkok_-_Jatujak_Market_02.JPG?width=640" alt="Chatuchak Weekend Market" loading="lazy" onerror="imgFail(this)"><figcaption>Chatuchak Market — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_Lumphini_Park.jpg?width=640" alt="Lumphini Park" loading="lazy" onerror="imgFail(this)"><figcaption>Lumphini Park — Foto: Wikimedia Commons</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jodd_Fairs_DanNeramit_2023-05-03.jpg?width=640" alt="Jodd Fairs night market" loading="lazy" onerror="imgFail(this)"><figcaption>Jodd Fairs — Foto: Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangkok_-_Jatujak_Market_02.JPG?width=640" alt="Chatuchak Weekend Market" loading="lazy" onerror="imgFail(this)"><figcaption>Chatuchak Market — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_Lumphini_Park.jpg?width=640" alt="Lumphini Park" loading="lazy" onerror="imgFail(this)"><figcaption>Lumphini Park — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jodd_Fairs_DanNeramit_2023-05-03.jpg?width=640" alt="Jodd Fairs night market" loading="lazy" onerror="imgFail(this)"><figcaption>Jodd Fairs — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maeklong_Railway_Market_02.jpg?width=640" alt="Maeklong Railway Market" loading="lazy" onerror="imgFail(this)"><figcaption>Maeklong Railway Market — Wikimedia Commons</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Floating_market_at_Damnoen_Saduak_9.JPG?width=640" alt="Damnoen Saduak floating market" loading="lazy" onerror="imgFail(this)"><figcaption>Floating market — Wikimedia Commons</figcaption></figure>
       </div>
     </div>
 
     <div class="daycard" id="bkk-04">
-      <div class="dayhead"><h3>Mon 4 Jan — early flight to Phuket</h3></div>
+      <div class="dayhead">
+        <h3>Mon 4 Jan — early flight to Phuket</h3>
+        <div class="dayprog"><div class="pbar"><i></i></div><span class="pct">0%</span><span class="frac"></span></div>
+      </div>
       <div class="items">
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>04:30</time><h4>Taxi to Suvarnabhumi <span class="tag trv">🚗 Transfer</span></h4></div>
           <p>Pre-booked through the hotel.</p>
           <ul class="facts">
@@ -886,10 +1029,18 @@ function imgFail(img){
           </ul>
         </article>
         <article class="it travel">
+          <label class="tick" title="Mark as done"><input type="checkbox"></label>
           <div class="it-top"><time>06:40</time><h4>Fly to Phuket (TG227) <span class="tag trv">✈️ Travel</span></h4></div>
           <p>Lands 08:05. Last day in the Phuket section.</p>
         </article>
       </div>
+    </div>
+
+    <div class="photostrip">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangkok_skytrain_sunset.jpg?width=640" alt="BTS Skytrain, Bangkok" loading="lazy" onerror="imgFail(this)"><figcaption>BTS Skytrain — Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/River_traffic_on_Chao_Phraya_in_Bangkok_3.JPG?width=640" alt="Chao Phraya river boats" loading="lazy" onerror="imgFail(this)"><figcaption>Chao Phraya river boats — Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siam_Paragon_Bangkok_1.jpg?width=640" alt="Siam Paragon" loading="lazy" onerror="imgFail(this)"><figcaption>Siam Paragon — Wikimedia Commons</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Soi_Thong_Lor_26_Sep_2012.JPG?width=640" alt="Thong Lo, Sukhumvit" loading="lazy" onerror="imgFail(this)"><figcaption>Thong Lo (Sukhumvit) — Wikimedia Commons</figcaption></figure>
     </div>
   </section>
 
@@ -905,11 +1056,11 @@ function imgFail(img){
       </ul>
     </div>
     <div class="grid3">
-      <div class="budget"><div class="amt">€455</div><div class="lbl">🇴🇲 Oman</div></div>
+      <div class="budget"><div class="amt">≈ €290</div><div class="lbl">🇴🇲 Oman</div></div>
       <div class="budget"><div class="amt">€1,215</div><div class="lbl">🇹🇭 Phuket</div></div>
       <div class="budget"><div class="amt">€779</div><div class="lbl">🇹🇭 Bangkok</div></div>
     </div>
-    <p style="font-size:.82rem;color:var(--muted);margin-top:12px">Totals exclude flights and hotels, and exclude optional alternatives.</p>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:12px">Totals exclude flights and hotels, and exclude optional alternatives. Items marked "(est.)" are new estimates added when the plan changed.</p>
   </section>
 
 </main>
@@ -919,5 +1070,64 @@ function imgFail(img){
   Photos: Wikimedia Commons · Verify flights, bookings and opening hours on the official sites before travelling. 🌴
 </footer>
 
+<script>
+(function(){
+  'use strict';
+  var KEY='nye-trip-2026-progress-v1';
+  var days=[].slice.call(document.querySelectorAll('.daycard'));
+  var allCbs=[];
+  days.forEach(function(day,di){
+    var cbs=[].slice.call(day.querySelectorAll('input[type=checkbox]'));
+    cbs.forEach(function(cb,ci){
+      cb.id='cb-'+di+'-'+ci;
+      allCbs.push(cb);
+      cb.addEventListener('change',function(){ save(); paint(); });
+    });
+  });
+  function load(){ try{ return JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ return {}; } }
+  function save(){ var s={}; allCbs.forEach(function(cb){ s[cb.id]=cb.checked; }); try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function paintDay(day){
+    var cbs=day.querySelectorAll('input[type=checkbox]');
+    var t=cbs.length,d=0;
+    [].forEach.call(cbs,function(cb){
+      if(cb.checked)d++;
+      cb.closest('.it').classList.toggle('done',cb.checked);
+    });
+    var pct=t?Math.round(d/t*100):0;
+    var bar=day.querySelector('.pbar i'); if(bar)bar.style.width=pct+'%';
+    var el=day.querySelector('.dayprog .pct'); if(el)el.textContent=pct+'%';
+    var fr=day.querySelector('.dayprog .frac'); if(fr)fr.textContent=d+'/'+t;
+  }
+  function paintSection(id){
+    var sec=document.getElementById(id);
+    var cbs=sec.querySelectorAll('input[type=checkbox]');
+    var t=cbs.length,d=0;
+    [].forEach.call(cbs,function(cb){ if(cb.checked)d++; });
+    var pct=t?Math.round(d/t*100):0;
+    var bar=sec.querySelector('.secbar i'); if(bar)bar.style.width=pct+'%';
+    var el=sec.querySelector('.secpct'); if(el)el.textContent=pct+'%';
+  }
+  function paint(){
+    days.forEach(paintDay);
+    ['oman','phuket','bangkok'].forEach(paintSection);
+    var t=allCbs.length,d=0;
+    allCbs.forEach(function(cb){ if(cb.checked)d++; });
+    var pct=t?Math.round(d/t*100):0;
+    document.getElementById('topBar').style.width=pct+'%';
+    document.getElementById('heroBar').style.width=pct+'%';
+    document.getElementById('heroPct').textContent=pct+'%';
+    document.getElementById('heroFrac').textContent=d+' of '+t;
+  }
+  var st=load();
+  allCbs.forEach(function(cb){ if(st[cb.id])cb.checked=true; });
+  paint();
+  document.getElementById('btnReset').addEventListener('click',function(){
+    if(!confirm('Clear all progress?'))return;
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    allCbs.forEach(function(cb){ cb.checked=false; });
+    paint();
+  });
+})();
+</script>
 </body>
 </html>
